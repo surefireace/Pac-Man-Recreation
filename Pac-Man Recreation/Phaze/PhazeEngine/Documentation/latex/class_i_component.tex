@@ -1,0 +1,66 @@
+\hypertarget{class_i_component}{}\section{I\+Component Class Reference}
+\label{class_i_component}\index{I\+Component@{I\+Component}}
+
+
+Interface for Components.  
+
+
+
+
+{\ttfamily \#include $<$I\+Component.\+h$>$}
+
+Inheritance diagram for I\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_component}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_i_component_a4bd5209b8e63446a7fa7d8bf52512590}{Attach\+Game\+Object}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$p\+Game\+Object)
+\begin{DoxyCompactList}\small\item\em Attaches a game object to the component. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_component_af1ab9b7331c157bad637ccc9b1f84738}\label{class_i_component_af1ab9b7331c157bad637ccc9b1f84738}} 
+void \mbox{\hyperlink{class_i_component_af1ab9b7331c157bad637ccc9b1f84738}{Detach\+Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Detaches a game object to the component. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_component_a1ad033cc00f92661575c019a3e5f9e25}\label{class_i_component_a1ad033cc00f92661575c019a3e5f9e25}} 
+unsigned int \mbox{\hyperlink{class_i_component_a1ad033cc00f92661575c019a3e5f9e25}{Get\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Returns the component ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_component_a7ccd24d547d0a4850071db70afdc49e9}\label{class_i_component_a7ccd24d547d0a4850071db70afdc49e9}} 
+void \mbox{\hyperlink{class_i_component_a7ccd24d547d0a4850071db70afdc49e9}{Set\+ID}} (unsigned int new\+ID)
+\begin{DoxyCompactList}\small\item\em Sets the component ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_component_ab1a616cdfb3812f3aabdb97666c71116}\label{class_i_component_ab1a616cdfb3812f3aabdb97666c71116}} 
+virtual \mbox{\hyperlink{class_i_component_ab1a616cdfb3812f3aabdb97666c71116}{$\sim$\+I\+Component}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_component_a2a03e5373f9b633031ed22597ab051ce}\label{class_i_component_a2a03e5373f9b633031ed22597ab051ce}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ \mbox{\hyperlink{class_i_component_a2a03e5373f9b633031ed22597ab051ce}{m\+\_\+p\+Game\+Object}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_game_object}{Game\+Object}} attached to this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for Components. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_component_a4bd5209b8e63446a7fa7d8bf52512590}\label{class_i_component_a4bd5209b8e63446a7fa7d8bf52512590}} 
+\index{I\+Component@{I\+Component}!Attach\+Game\+Object@{Attach\+Game\+Object}}
+\index{Attach\+Game\+Object@{Attach\+Game\+Object}!I\+Component@{I\+Component}}
+\subsubsection{\texorpdfstring{Attach\+Game\+Object()}{AttachGameObject()}}
+{\footnotesize\ttfamily void I\+Component\+::\+Attach\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{p\+Game\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Attaches a game object to the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Game\+Object} & Pointer to game object to attach to. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Logic/\+Game\+Objects/\mbox{\hyperlink{_i_component_8h}{I\+Component.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{class_key_command}{}\section{Key\+Command Class Reference}
+\label{class_key_command}\index{Key\+Command@{Key\+Command}}
+
+
+Represents a keyboard command.  
+
+
+
+
+{\ttfamily \#include $<$Key\+Command.\+h$>$}
+
+Inheritance diagram for Key\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_key_command}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_key_command_abd933bd3181a248c86fdd38801647e92}\label{class_key_command_abd933bd3181a248c86fdd38801647e92}} 
+enum \mbox{\hyperlink{class_key_command_abd933bd3181a248c86fdd38801647e92}{State}} \{ {\bfseries k\+Invalid}, 
+{\bfseries k\+Pressed}, 
+{\bfseries k\+Released}, 
+{\bfseries k\+Num\+Of\+States}
+ \}
+\begin{DoxyCompactList}\small\item\em Different key states. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_key_command_ad60da4c304d27c3d54aed183e361d9e8}{Key\+Command}} (\mbox{\hyperlink{class_command_a45bbda49e9ee96d262ac651fefffe487}{Command\+::\+Action}} action=Command\+::\+Action\+::k\+Invalid, \mbox{\hyperlink{class_key_command_abd933bd3181a248c86fdd38801647e92}{State}} state=State\+::k\+Invalid, S\+D\+L\+\_\+\+Keycode key=S\+D\+L\+K\+\_\+\+U\+N\+K\+N\+O\+WN)
+\item 
+\mbox{\Hypertarget{class_key_command_a3de8b2fef57cb8a275c937b9c1424f03}\label{class_key_command_a3de8b2fef57cb8a275c937b9c1424f03}} 
+\mbox{\hyperlink{class_key_command_abd933bd3181a248c86fdd38801647e92}{State}} \mbox{\hyperlink{class_key_command_a3de8b2fef57cb8a275c937b9c1424f03}{Get\+State}} ()
+\begin{DoxyCompactList}\small\item\em Returns the state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_key_command_a7c899ef655747d0386f55833b3b2b542}{Set\+State}} (\mbox{\hyperlink{class_key_command_abd933bd3181a248c86fdd38801647e92}{State}} state)
+\begin{DoxyCompactList}\small\item\em Sets command state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents a keyboard command. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_key_command_ad60da4c304d27c3d54aed183e361d9e8}\label{class_key_command_ad60da4c304d27c3d54aed183e361d9e8}} 
+\index{Key\+Command@{Key\+Command}!Key\+Command@{Key\+Command}}
+\index{Key\+Command@{Key\+Command}!Key\+Command@{Key\+Command}}
+\subsubsection{\texorpdfstring{Key\+Command()}{KeyCommand()}}
+{\footnotesize\ttfamily Key\+Command\+::\+Key\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_command_a45bbda49e9ee96d262ac651fefffe487}{Command\+::\+Action}}}]{action = {\ttfamily Command\+:\+:Action\+:\+:kInvalid},  }\item[{\mbox{\hyperlink{class_key_command_abd933bd3181a248c86fdd38801647e92}{State}}}]{state = {\ttfamily State\+:\+:kInvalid},  }\item[{S\+D\+L\+\_\+\+Keycode}]{key = {\ttfamily SDLK\+\_\+UNKNOWN} }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em action} & \mbox{\hyperlink{class_command}{Command}} action \\
+\hline
+{\em state} & \mbox{\hyperlink{class_command}{Command}} state \\
+\hline
+{\em key} & Key this command represents \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_key_command_a7c899ef655747d0386f55833b3b2b542}\label{class_key_command_a7c899ef655747d0386f55833b3b2b542}} 
+\index{Key\+Command@{Key\+Command}!Set\+State@{Set\+State}}
+\index{Set\+State@{Set\+State}!Key\+Command@{Key\+Command}}
+\subsubsection{\texorpdfstring{Set\+State()}{SetState()}}
+{\footnotesize\ttfamily void Key\+Command\+::\+Set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_key_command_abd933bd3181a248c86fdd38801647e92}{State}}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets command state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & State to be set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Logic/\+Input/\mbox{\hyperlink{_key_command_8h}{Key\+Command.\+h}}\item 
+Source/\+Logic/\+Input/Key\+Command.\+cpp\end{DoxyCompactItemize}

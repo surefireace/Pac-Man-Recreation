@@ -1,0 +1,3 @@
+[Info]@view.cpp line: 291 message: View allocated!
+[Info]@view.cpp line: 291 message: View allocated!
+[Info]@view.cpp line: 291 message: View allocated!

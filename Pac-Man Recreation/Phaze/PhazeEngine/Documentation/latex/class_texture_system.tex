@@ -1,0 +1,81 @@
+\hypertarget{class_texture_system}{}\section{Texture\+System Class Reference}
+\label{class_texture_system}\index{Texture\+System@{Texture\+System}}
+
+
+Stores textures.  
+
+
+
+
+{\ttfamily \#include $<$Texture\+System.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_texture_system_a3d2ff8744c36cdb154a74b8f78b11f08}{Texture\+System}} ()=delete
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_texture_system_acaf3097772efaf52efeb13c622bc4740}\label{class_texture_system_acaf3097772efaf52efeb13c622bc4740}} 
+static void \mbox{\hyperlink{class_texture_system_acaf3097772efaf52efeb13c622bc4740}{Clean\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Cleans textures from memory. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_texture_system_aa771f8e2ced09436fb12fd0ebae83784}{Load\+Texture}} (const std\+::string \&texture\+Name, const std\+::string \&file\+Name, S\+D\+L\+\_\+\+Renderer $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Loads a texture to texture map. \end{DoxyCompactList}\item 
+static S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_texture_system_a1fb557835bcd6aead8e3d03358d2363e}{Get\+Texture}} (const std\+::string \&texture\+Name)
+\begin{DoxyCompactList}\small\item\em Returns a loaded texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores textures. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_texture_system_a3d2ff8744c36cdb154a74b8f78b11f08}\label{class_texture_system_a3d2ff8744c36cdb154a74b8f78b11f08}} 
+\index{Texture\+System@{Texture\+System}!Texture\+System@{Texture\+System}}
+\index{Texture\+System@{Texture\+System}!Texture\+System@{Texture\+System}}
+\subsubsection{\texorpdfstring{Texture\+System()}{TextureSystem()}}
+{\footnotesize\ttfamily Texture\+System\+::\+Texture\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructor Not ment to be invoked 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_texture_system_a1fb557835bcd6aead8e3d03358d2363e}\label{class_texture_system_a1fb557835bcd6aead8e3d03358d2363e}} 
+\index{Texture\+System@{Texture\+System}!Get\+Texture@{Get\+Texture}}
+\index{Get\+Texture@{Get\+Texture}!Texture\+System@{Texture\+System}}
+\subsubsection{\texorpdfstring{Get\+Texture()}{GetTexture()}}
+{\footnotesize\ttfamily static S\+D\+L\+\_\+\+Texture$\ast$ Texture\+System\+::\+Get\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a loaded texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & Name of texture to return \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_texture_system_aa771f8e2ced09436fb12fd0ebae83784}\label{class_texture_system_aa771f8e2ced09436fb12fd0ebae83784}} 
+\index{Texture\+System@{Texture\+System}!Load\+Texture@{Load\+Texture}}
+\index{Load\+Texture@{Load\+Texture}!Texture\+System@{Texture\+System}}
+\subsubsection{\texorpdfstring{Load\+Texture()}{LoadTexture()}}
+{\footnotesize\ttfamily void Texture\+System\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+Name,  }\item[{const std\+::string \&}]{file\+Name,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{p\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads a texture to texture map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & Name for to be loaded texture \\
+\hline
+{\em file\+Name} & Texture file to load \\
+\hline
+{\em p\+Renderer} & sdl renderer to use to create texture \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Systems/\mbox{\hyperlink{_texture_system_8h}{Texture\+System.\+h}}\item 
+Source/\+Systems/Texture\+System.\+cpp\end{DoxyCompactItemize}

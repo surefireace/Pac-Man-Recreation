@@ -1,0 +1,113 @@
+\hypertarget{class_application}{}\section{Application Class Reference}
+\label{class_application}\index{Application@{Application}}
+
+
+Engine entry point.  
+
+
+
+
+{\ttfamily \#include $<$Application.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}\label{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}} 
+\mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} \mbox{\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_application_a748bca84fefb9c12661cfaa2f623748d}\label{class_application_a748bca84fefb9c12661cfaa2f623748d}} 
+\mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} \mbox{\hyperlink{class_application_a748bca84fefb9c12661cfaa2f623748d}{$\sim$\+Application}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_application_a82c81028a029a840f92c37a977c527b8}\label{class_application_a82c81028a029a840f92c37a977c527b8}} 
+\mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} void \mbox{\hyperlink{class_application_a82c81028a029a840f92c37a977c527b8}{Run\+App}} ()
+\begin{DoxyCompactList}\small\item\em Runs the application. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} bool \mbox{\hyperlink{class_application_a5cce771d4da11e5ebbf573206775cd41}{Load\+Map}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Sets the path of a map to load. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} bool \mbox{\hyperlink{class_application_a751167b5a3e144289528c9f0e1087943}{Init\+Sdl}} (const std\+::string \&k\+Win\+Name, const int k\+Win\+Width, const int k\+Win\+Height, const int k\+Win\+X\+Pos, const int k\+Win\+Y\+Pos)
+\begin{DoxyCompactList}\small\item\em Initializes S\+DL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} bool \mbox{\hyperlink{class_application_accc91649cfb2e644112a886274c8ddda}{Init\+View}} ()
+\begin{DoxyCompactList}\small\item\em Initializezs the game view. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} bool \mbox{\hyperlink{class_application_acc45b42922f5d8bba477da90b36fa5c8}{Init\+Logic}} ()
+\begin{DoxyCompactList}\small\item\em Initializezs the game logic. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_application_ae6456d7c0f1a5a11325e00673b999b8d}\label{class_application_ae6456d7c0f1a5a11325e00673b999b8d}} 
+\mbox{\hyperlink{class_application_ae6456d7c0f1a5a11325e00673b999b8d}{Lua\+Function}} () void Foo(int n)
+\begin{DoxyCompactList}\small\item\em T\+E\+S\+T\+I\+NG expose to lua macro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Engine entry point. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_application_acc45b42922f5d8bba477da90b36fa5c8}\label{class_application_acc45b42922f5d8bba477da90b36fa5c8}} 
+\index{Application@{Application}!Init\+Logic@{Init\+Logic}}
+\index{Init\+Logic@{Init\+Logic}!Application@{Application}}
+\subsubsection{\texorpdfstring{Init\+Logic()}{InitLogic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} bool Application\+::\+Init\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializezs the game logic. 
+
+\begin{DoxyReturn}{Returns}
+Returns false if the logic fails to be initialized 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_application_a751167b5a3e144289528c9f0e1087943}\label{class_application_a751167b5a3e144289528c9f0e1087943}} 
+\index{Application@{Application}!Init\+Sdl@{Init\+Sdl}}
+\index{Init\+Sdl@{Init\+Sdl}!Application@{Application}}
+\subsubsection{\texorpdfstring{Init\+Sdl()}{InitSdl()}}
+{\footnotesize\ttfamily bool Application\+::\+Init\+Sdl (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{k\+Win\+Name,  }\item[{const int}]{k\+Win\+Width,  }\item[{const int}]{k\+Win\+Height,  }\item[{const int}]{k\+Win\+X\+Pos,  }\item[{const int}]{k\+Win\+Y\+Pos }\end{DoxyParamCaption})}
+
+
+
+Initializes S\+DL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+Win\+Name} & The name of the sdl window \\
+\hline
+{\em k\+Win\+Width} & Window width \\
+\hline
+{\em k\+Win\+Height} & Window height \\
+\hline
+{\em k\+Win\+X\+Pos} & Window x position \\
+\hline
+{\em k\+Win\+Y\+Pos} & Window y position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns false if sdl failed to inititialize 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_application_accc91649cfb2e644112a886274c8ddda}\label{class_application_accc91649cfb2e644112a886274c8ddda}} 
+\index{Application@{Application}!Init\+View@{Init\+View}}
+\index{Init\+View@{Init\+View}!Application@{Application}}
+\subsubsection{\texorpdfstring{Init\+View()}{InitView()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} bool Application\+::\+Init\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializezs the game view. 
+
+\begin{DoxyReturn}{Returns}
+Returns false if the view fails to be initialized 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_application_a5cce771d4da11e5ebbf573206775cd41}\label{class_application_a5cce771d4da11e5ebbf573206775cd41}} 
+\index{Application@{Application}!Load\+Map@{Load\+Map}}
+\index{Load\+Map@{Load\+Map}!Application@{Application}}
+\subsubsection{\texorpdfstring{Load\+Map()}{LoadMap()}}
+{\footnotesize\ttfamily bool Application\+::\+Load\+Map (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Sets the path of a map to load. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & the filepath of the map to load \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Application/\mbox{\hyperlink{_application_8h}{Application.\+h}}\item 
+Source/\+Application/Application.\+cpp\end{DoxyCompactItemize}

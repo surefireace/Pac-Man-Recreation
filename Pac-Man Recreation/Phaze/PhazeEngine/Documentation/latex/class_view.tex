@@ -1,0 +1,75 @@
+\hypertarget{class_view}{}\section{View Class Reference}
+\label{class_view}\index{View@{View}}
+
+
+Handles display\textquotesingle{}s and sounds of game.  
+
+
+
+
+{\ttfamily \#include $<$View.\+h$>$}
+
+Inheritance diagram for View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_view}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_view_a721fe641411d670c3679ee6e188c0084}{Init}} (S\+D\+L\+\_\+\+Renderer $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Initializes the view. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_a50f75e10ba08bf35196cd71c0b883331}\label{class_view_a50f75e10ba08bf35196cd71c0b883331}} 
+void \mbox{\hyperlink{class_view_a50f75e10ba08bf35196cd71c0b883331}{Clean\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Cleans up view. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_acc8397285a5d338f862e6864602e2d87}\label{class_view_acc8397285a5d338f862e6864602e2d87}} 
+virtual \mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} void \mbox{\hyperlink{class_view_acc8397285a5d338f862e6864602e2d87}{Render}} () override
+\begin{DoxyCompactList}\small\item\em Renders the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_abaeae948fb2fbc2585756afc6962b66e}\label{class_view_abaeae948fb2fbc2585756afc6962b66e}} 
+virtual \mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} void \mbox{\hyperlink{class_view_abaeae948fb2fbc2585756afc6962b66e}{Handle\+Event}} (\mbox{\hyperlink{struct_event}{Event}} $\ast$p\+Event) override
+\begin{DoxyCompactList}\small\item\em Hanldes an event. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_view_a899a25e7a81c52ab1ce48ce7675f06df}{Get\+Init\+Flag}} ()
+\begin{DoxyCompactList}\small\item\em Returns the initialization flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles display\textquotesingle{}s and sounds of game. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_view_a899a25e7a81c52ab1ce48ce7675f06df}\label{class_view_a899a25e7a81c52ab1ce48ce7675f06df}} 
+\index{View@{View}!Get\+Init\+Flag@{Get\+Init\+Flag}}
+\index{Get\+Init\+Flag@{Get\+Init\+Flag}!View@{View}}
+\subsubsection{\texorpdfstring{Get\+Init\+Flag()}{GetInitFlag()}}
+{\footnotesize\ttfamily const bool View\+::\+Get\+Init\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the initialization flag. 
+
+\begin{DoxyReturn}{Returns}
+True or False if initialized 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_view_a721fe641411d670c3679ee6e188c0084}\label{class_view_a721fe641411d670c3679ee6e188c0084}} 
+\index{View@{View}!Init@{Init}}
+\index{Init@{Init}!View@{View}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool View\+::\+Init (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{p\+Renderer }\end{DoxyParamCaption})}
+
+
+
+Initializes the view. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Game} & \mbox{\hyperlink{class_game}{Game}} delegate to render \\
+\hline
+{\em p\+Renderer} & S\+DL renderer to use \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Views/\mbox{\hyperlink{_view_8h}{View.\+h}}\item 
+Source/\+Views/View.\+cpp\end{DoxyCompactItemize}

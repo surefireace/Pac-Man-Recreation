@@ -1,0 +1,147 @@
+\hypertarget{class_physics_system}{}\section{Physics\+System Class Reference}
+\label{class_physics_system}\index{Physics\+System@{Physics\+System}}
+
+
+Physics system for engine.  
+
+
+
+
+{\ttfamily \#include $<$Physics\+System.\+h$>$}
+
+Inheritance diagram for Physics\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_physics_system}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics_system_aa9b3a5f5c38063cdc3a78717250a239e}\label{class_physics_system_aa9b3a5f5c38063cdc3a78717250a239e}} 
+enum \mbox{\hyperlink{class_physics_system_aa9b3a5f5c38063cdc3a78717250a239e}{Rigid\+Body\+Type}} \{ {\bfseries k\+Static}, 
+{\bfseries k\+Dynamic}, 
+{\bfseries k\+Num\+Of\+Types}
+ \}
+\begin{DoxyCompactList}\small\item\em Rigid Body types. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_system_ac3b7ef40b19864e4ecdec88af3420a89}\label{class_physics_system_ac3b7ef40b19864e4ecdec88af3420a89}} 
+enum \mbox{\hyperlink{class_physics_system_ac3b7ef40b19864e4ecdec88af3420a89}{Polygon\+Shape\+Type}} \{ {\bfseries k\+Box}, 
+{\bfseries k\+Num\+Of\+Types}
+ \}
+\begin{DoxyCompactList}\small\item\em Polygon Shape types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_physics_system_afa1b487619b6e9e1c16ec03fb9fd4270}{Create\+Physics\+World}} (b2\+Vec2 gravity)
+\begin{DoxyCompactList}\small\item\em Creates a physics world. There can only be one physics world! \end{DoxyCompactList}\item 
+b2\+Body $\ast$ \mbox{\hyperlink{class_physics_system_a6f1d9c9e9662f641332912172443376e}{Create\+Rigid\+Body}} (b2\+Body\+Def $\ast$p\+Body\+Def)
+\begin{DoxyCompactList}\small\item\em Creates a rigid body. This is needed for a world. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_system_aabb107eb3795556bff83099d7f3cb710}\label{class_physics_system_aabb107eb3795556bff83099d7f3cb710}} 
+virtual void \mbox{\hyperlink{class_physics_system_aabb107eb3795556bff83099d7f3cb710}{Update}} (float delta\+Time\+\_\+sec) override
+\begin{DoxyCompactList}\small\item\em Updates the physics world. \end{DoxyCompactList}\item 
+b2\+Polygon\+Shape $\ast$ \mbox{\hyperlink{class_physics_system_a651f848a76752bfb3f69e99a3a908865}{Create\+Polygon}} (const \mbox{\hyperlink{class_physics_system_ac3b7ef40b19864e4ecdec88af3420a89}{Polygon\+Shape\+Type}} type, float width, float height)
+\begin{DoxyCompactList}\small\item\em Creates and returns a polygon shape. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_system_a19f4322c3ffe4c8ba2077dcc638e8039}\label{class_physics_system_a19f4322c3ffe4c8ba2077dcc638e8039}} 
+void \mbox{\hyperlink{class_physics_system_a19f4322c3ffe4c8ba2077dcc638e8039}{Cleanup}} ()
+\begin{DoxyCompactList}\small\item\em Cleans up the physics system from memory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_system_a294106832fdfe2bc30878a7ed6380fb0}\label{class_physics_system_a294106832fdfe2bc30878a7ed6380fb0}} 
+void \mbox{\hyperlink{class_physics_system_a294106832fdfe2bc30878a7ed6380fb0}{Set\+Renderer}} (S\+D\+L\+\_\+\+Renderer $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Draws physics debug info. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_system_a9d09acb7309a9bd0c1527ab8b5e39469}\label{class_physics_system_a9d09acb7309a9bd0c1527ab8b5e39469}} 
+void \mbox{\hyperlink{class_physics_system_a9d09acb7309a9bd0c1527ab8b5e39469}{Draw\+Debug\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Draws debug info. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_system_a3ee533540e81eac532453c4c02c8749a}\label{class_physics_system_a3ee533540e81eac532453c4c02c8749a}} 
+virtual void {\bfseries Draw\+Polygon} (const b2\+Vec2 $\ast$vertices, int32 vertex\+Count, const b2\+Color \&color) override
+\item 
+\mbox{\Hypertarget{class_physics_system_a61db3554729697a2023e297d28c7b958}\label{class_physics_system_a61db3554729697a2023e297d28c7b958}} 
+virtual void {\bfseries Draw\+Solid\+Polygon} (const b2\+Vec2 $\ast$vertices, int32 vertex\+Count, const b2\+Color \&color) override
+\item 
+\mbox{\Hypertarget{class_physics_system_a1c653117bcff772a3d9dc1462c081fc7}\label{class_physics_system_a1c653117bcff772a3d9dc1462c081fc7}} 
+virtual void {\bfseries Draw\+Circle} (const b2\+Vec2 \&center, float32 radius, const b2\+Color \&color) override
+\item 
+\mbox{\Hypertarget{class_physics_system_a6e17da4cb6c33eabee1a4f9276a71598}\label{class_physics_system_a6e17da4cb6c33eabee1a4f9276a71598}} 
+virtual void {\bfseries Draw\+Solid\+Circle} (const b2\+Vec2 \&center, float32 radius, const b2\+Vec2 \&axis, const b2\+Color \&color) override
+\item 
+\mbox{\Hypertarget{class_physics_system_a65d8bb17d93f22cbf0bc54d62dc94ed0}\label{class_physics_system_a65d8bb17d93f22cbf0bc54d62dc94ed0}} 
+virtual void {\bfseries Draw\+Segment} (const b2\+Vec2 \&p1, const b2\+Vec2 \&p2, const b2\+Color \&color) override
+\item 
+\mbox{\Hypertarget{class_physics_system_a5b3cecb4fb81082cb4cf14fc21d91d06}\label{class_physics_system_a5b3cecb4fb81082cb4cf14fc21d91d06}} 
+virtual void {\bfseries Draw\+Transform} (const b2\+Transform \&xf) override
+\item 
+\mbox{\Hypertarget{class_physics_system_a44da913dfdad57c721c2b6330b485081}\label{class_physics_system_a44da913dfdad57c721c2b6330b485081}} 
+virtual void {\bfseries Draw\+Point} (const b2\+Vec2 \&p, float32 size, const b2\+Color \&color) override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics_system_ad40ddb4eaaa38a223440d98080c1ddfc}\label{class_physics_system_ad40ddb4eaaa38a223440d98080c1ddfc}} 
+static \mbox{\hyperlink{class_physics_system}{Physics\+System}} $\ast$ \mbox{\hyperlink{class_physics_system_ad40ddb4eaaa38a223440d98080c1ddfc}{Get}} ()
+\begin{DoxyCompactList}\small\item\em Returns an instance of the system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_system_a40db15dde9716172d2ba1d7622a196fd}\label{class_physics_system_a40db15dde9716172d2ba1d7622a196fd}} 
+static void \mbox{\hyperlink{class_physics_system_a40db15dde9716172d2ba1d7622a196fd}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Deletes the instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Physics system for engine. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics_system_afa1b487619b6e9e1c16ec03fb9fd4270}\label{class_physics_system_afa1b487619b6e9e1c16ec03fb9fd4270}} 
+\index{Physics\+System@{Physics\+System}!Create\+Physics\+World@{Create\+Physics\+World}}
+\index{Create\+Physics\+World@{Create\+Physics\+World}!Physics\+System@{Physics\+System}}
+\subsubsection{\texorpdfstring{Create\+Physics\+World()}{CreatePhysicsWorld()}}
+{\footnotesize\ttfamily void Physics\+System\+::\+Create\+Physics\+World (\begin{DoxyParamCaption}\item[{b2\+Vec2}]{gravity }\end{DoxyParamCaption})}
+
+
+
+Creates a physics world. There can only be one physics world! 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gravity} & Gravity for the world \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics_system_a651f848a76752bfb3f69e99a3a908865}\label{class_physics_system_a651f848a76752bfb3f69e99a3a908865}} 
+\index{Physics\+System@{Physics\+System}!Create\+Polygon@{Create\+Polygon}}
+\index{Create\+Polygon@{Create\+Polygon}!Physics\+System@{Physics\+System}}
+\subsubsection{\texorpdfstring{Create\+Polygon()}{CreatePolygon()}}
+{\footnotesize\ttfamily b2\+Polygon\+Shape $\ast$ Physics\+System\+::\+Create\+Polygon (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_physics_system_ac3b7ef40b19864e4ecdec88af3420a89}{Polygon\+Shape\+Type}}}]{type,  }\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+
+
+Creates and returns a polygon shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of polygon shape to make \\
+\hline
+{\em width} & Width of the shape to make \\
+\hline
+{\em height} & Height of the shape to make \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics_system_a6f1d9c9e9662f641332912172443376e}\label{class_physics_system_a6f1d9c9e9662f641332912172443376e}} 
+\index{Physics\+System@{Physics\+System}!Create\+Rigid\+Body@{Create\+Rigid\+Body}}
+\index{Create\+Rigid\+Body@{Create\+Rigid\+Body}!Physics\+System@{Physics\+System}}
+\subsubsection{\texorpdfstring{Create\+Rigid\+Body()}{CreateRigidBody()}}
+{\footnotesize\ttfamily b2\+Body $\ast$ Physics\+System\+::\+Create\+Rigid\+Body (\begin{DoxyParamCaption}\item[{b2\+Body\+Def $\ast$}]{p\+Body\+Def }\end{DoxyParamCaption})}
+
+
+
+Creates a rigid body. This is needed for a world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type of rigid body to create. \\
+\hline
+{\em x\+Pos} & X position of rigid body \\
+\hline
+{\em y\+Pos} & Y position of rigid body \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Logic/\+Physics/\mbox{\hyperlink{_physics_system_8h}{Physics\+System.\+h}}\item 
+Source/\+Logic/\+Physics/Physics\+System.\+cpp\end{DoxyCompactItemize}

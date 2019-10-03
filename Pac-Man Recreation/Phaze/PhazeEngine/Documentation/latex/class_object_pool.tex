@@ -1,0 +1,83 @@
+\hypertarget{class_object_pool}{}\section{Object\+Pool Class Reference}
+\label{class_object_pool}\index{Object\+Pool@{Object\+Pool}}
+
+
+Pool of Game\+Objects.  
+
+
+
+
+{\ttfamily \#include $<$Object\+Pool.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object\+Ptr \mbox{\hyperlink{class_object_pool_acbae5f0774df14a2ddccc0786c3863c3}{Create\+Game\+Object}} (const std\+::string \&obj\+Name)
+\begin{DoxyCompactList}\small\item\em Creates a game object and returns a Game\+Object\+Ptr to it. \end{DoxyCompactList}\item 
+Game\+Object\+Ptr \mbox{\hyperlink{class_object_pool_a49990f34429a9468b2b2344765ac75dd}{Create\+Deep\+Clone\+Game\+Object}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$p\+Object\+Prototype)
+\begin{DoxyCompactList}\small\item\em Creates game object by performing a deep copy of an object and returns a Game\+Object\+Ptr to it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_object_pool_a074b2f5730a286179cf5e0f5bd9374ce}{Delete\+Game\+Object}} (const unsigned int obj\+ID)
+\begin{DoxyCompactList}\small\item\em Frees a game object from the pool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_object_pool_aa8764710e7d98d249aac86b69b0f1263}\label{class_object_pool_aa8764710e7d98d249aac86b69b0f1263}} 
+bool \mbox{\hyperlink{class_object_pool_aa8764710e7d98d249aac86b69b0f1263}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the object pool. Returns false if not successful. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_object_pool_a1469f91b4960d14f34ab411509ce15cc}\label{class_object_pool_a1469f91b4960d14f34ab411509ce15cc}} 
+int \mbox{\hyperlink{class_object_pool_a1469f91b4960d14f34ab411509ce15cc}{Get\+Obj\+Limit}} ()
+\begin{DoxyCompactList}\small\item\em Returns game object limit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Pool of Game\+Objects. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_object_pool_a49990f34429a9468b2b2344765ac75dd}\label{class_object_pool_a49990f34429a9468b2b2344765ac75dd}} 
+\index{Object\+Pool@{Object\+Pool}!Create\+Deep\+Clone\+Game\+Object@{Create\+Deep\+Clone\+Game\+Object}}
+\index{Create\+Deep\+Clone\+Game\+Object@{Create\+Deep\+Clone\+Game\+Object}!Object\+Pool@{Object\+Pool}}
+\subsubsection{\texorpdfstring{Create\+Deep\+Clone\+Game\+Object()}{CreateDeepCloneGameObject()}}
+{\footnotesize\ttfamily Game\+Object\+Ptr Object\+Pool\+::\+Create\+Deep\+Clone\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{p\+Object\+Prototype }\end{DoxyParamCaption})}
+
+
+
+Creates game object by performing a deep copy of an object and returns a Game\+Object\+Ptr to it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Object\+Prototype} & The game object to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_pool_acbae5f0774df14a2ddccc0786c3863c3}\label{class_object_pool_acbae5f0774df14a2ddccc0786c3863c3}} 
+\index{Object\+Pool@{Object\+Pool}!Create\+Game\+Object@{Create\+Game\+Object}}
+\index{Create\+Game\+Object@{Create\+Game\+Object}!Object\+Pool@{Object\+Pool}}
+\subsubsection{\texorpdfstring{Create\+Game\+Object()}{CreateGameObject()}}
+{\footnotesize\ttfamily Game\+Object\+Ptr Object\+Pool\+::\+Create\+Game\+Object (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{obj\+Name }\end{DoxyParamCaption})}
+
+
+
+Creates a game object and returns a Game\+Object\+Ptr to it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Name} & The name of the new \mbox{\hyperlink{class_game_object}{Game\+Object}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_pool_a074b2f5730a286179cf5e0f5bd9374ce}\label{class_object_pool_a074b2f5730a286179cf5e0f5bd9374ce}} 
+\index{Object\+Pool@{Object\+Pool}!Delete\+Game\+Object@{Delete\+Game\+Object}}
+\index{Delete\+Game\+Object@{Delete\+Game\+Object}!Object\+Pool@{Object\+Pool}}
+\subsubsection{\texorpdfstring{Delete\+Game\+Object()}{DeleteGameObject()}}
+{\footnotesize\ttfamily void Object\+Pool\+::\+Delete\+Game\+Object (\begin{DoxyParamCaption}\item[{const unsigned int}]{obj\+ID }\end{DoxyParamCaption})}
+
+
+
+Frees a game object from the pool. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+ID} & ID of the game object to free. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Logic/\+Game\+Objects/Object\+Pool.\+h\item 
+Source/\+Logic/\+Game\+Objects/Object\+Pool.\+cpp\end{DoxyCompactItemize}

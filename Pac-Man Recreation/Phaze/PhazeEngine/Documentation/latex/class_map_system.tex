@@ -1,0 +1,53 @@
+\hypertarget{class_map_system}{}\section{Map\+System Class Reference}
+\label{class_map_system}\index{Map\+System@{Map\+System}}
+
+
+Handles all tile maps.  
+
+
+
+
+{\ttfamily \#include $<$Map\+System.\+h$>$}
+
+Inheritance diagram for Map\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_map_system}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_map_system_a4469dda2eb9cda88149e398fba471844}\label{class_map_system_a4469dda2eb9cda88149e398fba471844}} 
+bool \mbox{\hyperlink{class_map_system_a4469dda2eb9cda88149e398fba471844}{Load\+Map}} (const char $\ast$file\+Path)
+\begin{DoxyCompactList}\small\item\em Loads a map from file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_map_system_a3dd0e0552a3366b66c6c8ddef67572b5}\label{class_map_system_a3dd0e0552a3366b66c6c8ddef67572b5}} 
+void \mbox{\hyperlink{class_map_system_a3dd0e0552a3366b66c6c8ddef67572b5}{Clean\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Cleans map system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_map_system_aa9043b7359220c63274a6d0b520bfe10}\label{class_map_system_aa9043b7359220c63274a6d0b520bfe10}} 
+virtual void \mbox{\hyperlink{class_map_system_aa9043b7359220c63274a6d0b520bfe10}{Handle\+Event}} (\mbox{\hyperlink{struct_event}{Event}} $\ast$p\+Event) override
+\begin{DoxyCompactList}\small\item\em Inherited via \mbox{\hyperlink{class_i_event_handler}{I\+Event\+Handler}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_map_system_a0f01e1a8964dcb9ddd6364e3bccc0d95}\label{class_map_system_a0f01e1a8964dcb9ddd6364e3bccc0d95}} 
+void \mbox{\hyperlink{class_map_system_a0f01e1a8964dcb9ddd6364e3bccc0d95}{Set\+Obj\+Pool}} (\mbox{\hyperlink{class_object_pool}{Object\+Pool}} $\ast$p\+Obj\+Pool)
+\begin{DoxyCompactList}\small\item\em Sets the game object pool to use. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_map_system_a4e9dfbbf00c54d795785eafef680a8de}\label{class_map_system_a4e9dfbbf00c54d795785eafef680a8de}} 
+void \mbox{\hyperlink{class_map_system_a4e9dfbbf00c54d795785eafef680a8de}{Set\+Component\+Pool}} (\mbox{\hyperlink{class_component_pool}{Component\+Pool}} $\ast$p\+Comp\+Pool)
+\begin{DoxyCompactList}\small\item\em Sets the component pool to use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_map_system_a1c471d051f4d40541f21a7882da835c2}\label{class_map_system_a1c471d051f4d40541f21a7882da835c2}} 
+static \mbox{\hyperlink{class_map_system}{Map\+System}} $\ast$ \mbox{\hyperlink{class_map_system_a1c471d051f4d40541f21a7882da835c2}{Get}} ()
+\begin{DoxyCompactList}\small\item\em Returns the instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_map_system_aba3e8e618abf21c5b62a94b8adfa33b9}\label{class_map_system_aba3e8e618abf21c5b62a94b8adfa33b9}} 
+static void \mbox{\hyperlink{class_map_system_aba3e8e618abf21c5b62a94b8adfa33b9}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Deletes the instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles all tile maps. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Views/\mbox{\hyperlink{_map_system_8h}{Map\+System.\+h}}\item 
+Source/\+Views/Map\+System.\+cpp\end{DoxyCompactItemize}

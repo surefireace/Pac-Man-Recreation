@@ -1,0 +1,30 @@
+\hypertarget{_event_system_8h}{}\section{Source/\+Logic/\+Events/\+Event\+System.h File Reference}
+\label{_event_system_8h}\index{Source/\+Logic/\+Events/\+Event\+System.\+h@{Source/\+Logic/\+Events/\+Event\+System.\+h}}
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$S\+D\+L\+\_\+rect.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_event}{Event}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_event}{Event}} structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_game_event}{Game\+Event}}
+\begin{DoxyCompactList}\small\item\em Structure for \mbox{\hyperlink{class_game}{Game}} Logic Events. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_map_event}{Map\+Event}}
+\begin{DoxyCompactList}\small\item\em Structure for Map System Events. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_sfx_event}{Sfx\+Event}}
+\begin{DoxyCompactList}\small\item\em Structure for Sfx Events. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_music_event}{Music\+Event}}
+\begin{DoxyCompactList}\small\item\em Structure for Music Events. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_texture_event}{Texture\+Event}}
+\begin{DoxyCompactList}\small\item\em Structure for Texture events. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_i_event_handler}{I\+Event\+Handler}}
+\begin{DoxyCompactList}\small\item\em Interface for \mbox{\hyperlink{struct_event}{Event}} handlers. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_event_system}{Event\+System}}
+\begin{DoxyCompactList}\small\item\em System to handle sending and recieving of Events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_event_system_8h_a1952a96deec9bc6042cb51af3e68f4ca}\label{_event_system_8h_a1952a96deec9bc6042cb51af3e68f4ca}} 
+typedef std\+::vector$<$ \mbox{\hyperlink{class_i_event_handler}{I\+Event\+Handler}} $\ast$ $>$ {\bfseries Event\+Handlers}
+\end{DoxyCompactItemize}

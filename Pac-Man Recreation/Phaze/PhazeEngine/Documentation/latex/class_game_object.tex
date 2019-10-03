@@ -1,0 +1,286 @@
+\hypertarget{class_game_object}{}\section{Game\+Object Class Reference}
+\label{class_game_object}\index{Game\+Object@{Game\+Object}}
+
+
+Represents a game object.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Object.\+h$>$}
+
+Inheritance diagram for Game\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}\label{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}} 
+\mbox{\hyperlink{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}{Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object_a0cefa9305b62d18a11d7c1182fcbf5bc}{Game\+Object}} (const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&original)
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} void \mbox{\hyperlink{class_game_object_a931541422ec57567e1d46436d97b874c}{Update}} (float delta\+Time\+\_\+sec) override
+\begin{DoxyCompactList}\small\item\em Updates the game object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_af9450b108e616d4e30c7a88534517df0}\label{class_game_object_af9450b108e616d4e30c7a88534517df0}} 
+virtual \mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} void \mbox{\hyperlink{class_game_object_af9450b108e616d4e30c7a88534517df0}{Render}} () override
+\begin{DoxyCompactList}\small\item\em Renders the game object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a1e8c34679f8e8decbd9628a890f47c7f}{Attach\+Component}} (const \mbox{\hyperlink{class_component_pool_a7a88ce8bc60d1936539c2b9757b7e9ff}{Component\+Pool\+::\+Type}} \&type)
+\begin{DoxyCompactList}\small\item\em Attaches a component to this game object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a4d100b6ecc6476f52c72f0889e6c06d4}{Dettach\+Component}} (const unsigned int component\+ID)
+\begin{DoxyCompactList}\small\item\em Detaches a component from this game object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a44d7b100b46dafcfe895baf15ee39eff}\label{class_game_object_a44d7b100b46dafcfe895baf15ee39eff}} 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_game_object_a44d7b100b46dafcfe895baf15ee39eff}{Get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a0c213e4df823a0f68cf8906a6937f88e}{Set\+Position}} (\mbox{\hyperlink{struct_vector2_d}{Vector2D}} new\+Pos)
+\begin{DoxyCompactList}\small\item\em Sets the position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a71e9fe489b7c5ef7e8e0368ec71fac6d}\label{class_game_object_a71e9fe489b7c5ef7e8e0368ec71fac6d}} 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_game_object_a71e9fe489b7c5ef7e8e0368ec71fac6d}{Get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Returns size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a67cd10342fab71294976bf7fd5e22e01}{Set\+Size}} (\mbox{\hyperlink{struct_vector2_d}{Vector2D}} new\+Size)
+\begin{DoxyCompactList}\small\item\em Sets the size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_aac34f983d635994932c3b7a5c4e3e49a}\label{class_game_object_aac34f983d635994932c3b7a5c4e3e49a}} 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_game_object_aac34f983d635994932c3b7a5c4e3e49a}{Get\+Move\+Dir}} ()
+\begin{DoxyCompactList}\small\item\em Returns movement direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a11c2fa0ca47cbeb27d4887573a913438}{Set\+Move\+Dir}} (\mbox{\hyperlink{struct_vector2_d}{Vector2D}} new\+Dir)
+\begin{DoxyCompactList}\small\item\em Sets the movement direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a8dfeba914fba847488d3bff6e068f7a2}\label{class_game_object_a8dfeba914fba847488d3bff6e068f7a2}} 
+std\+::string \mbox{\hyperlink{class_game_object_a8dfeba914fba847488d3bff6e068f7a2}{Get\+Obj\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns object name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a400594b6957192dfe9cddaa513f49d7e}{Set\+Obj\+Name}} (std\+::string new\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a60d86fa7dab47fccf8255760612f6de1}\label{class_game_object_a60d86fa7dab47fccf8255760612f6de1}} 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{class_game_object_a60d86fa7dab47fccf8255760612f6de1}{Get\+Obj\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em Returns the sdl rect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a898813cdba2aa0888f6e5b0e4fc6ac64}{Set\+Obj\+Rect}} (S\+D\+L\+\_\+\+Rect new\+Rect)
+\begin{DoxyCompactList}\small\item\em Sets the name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a7fcf07003ef5424a7ce46461a8a0be06}\label{class_game_object_a7fcf07003ef5424a7ce46461a8a0be06}} 
+\mbox{\hyperlink{struct_texture_component}{Texture\+Component}} $\ast$ \mbox{\hyperlink{class_game_object_a7fcf07003ef5424a7ce46461a8a0be06}{Get\+Texture\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Returns the sdl texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a8b709e89ace9675b822b50bdd2ac879d}\label{class_game_object_a8b709e89ace9675b822b50bdd2ac879d}} 
+\mbox{\hyperlink{struct_physics_component}{Physics\+Component}} $\ast$ \mbox{\hyperlink{class_game_object_a8b709e89ace9675b822b50bdd2ac879d}{Get\+Physics\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Returns the physics component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_ae232f791564f4bf504e0ede697be7f0d}{Set\+Component\+Pool}} (\mbox{\hyperlink{class_component_pool}{Component\+Pool}} $\ast$p\+New\+Pool)
+\begin{DoxyCompactList}\small\item\em Sets the component pool to use. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_acc49d53385a1e3b344d59f177c09d91b}\label{class_game_object_acc49d53385a1e3b344d59f177c09d91b}} 
+unsigned int \mbox{\hyperlink{class_game_object_acc49d53385a1e3b344d59f177c09d91b}{Get\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Returns Object ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_af8b86b903fa6133147beecd900d4cb68}\label{class_game_object_af8b86b903fa6133147beecd900d4cb68}} 
+void \mbox{\hyperlink{class_game_object_af8b86b903fa6133147beecd900d4cb68}{Set\+ID}} (unsigned int new\+ID)
+\begin{DoxyCompactList}\small\item\em Sets the Object ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_aacd344875d0bee0c5a95af28305aa94a}\label{class_game_object_aacd344875d0bee0c5a95af28305aa94a}} 
+void \mbox{\hyperlink{class_game_object_aacd344875d0bee0c5a95af28305aa94a}{Attach\+To\+Lua\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Attaches the lua state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ac01455f6ad0b0b4bc3e6c51c6624fde4}\label{class_game_object_ac01455f6ad0b0b4bc3e6c51c6624fde4}} 
+void \mbox{\hyperlink{class_game_object_ac01455f6ad0b0b4bc3e6c51c6624fde4}{Attach\+Lua\+State}} (lua\+\_\+\+State $\ast$p\+Lua\+State)
+\begin{DoxyCompactList}\small\item\em attaches to lua state \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_object_a59738539e414c09e2704a4e72e84b62c}\label{class_game_object_a59738539e414c09e2704a4e72e84b62c}} 
+bool {\bfseries m\+\_\+horz\+Flip}
+\item 
+\mbox{\Hypertarget{class_game_object_ae228fe78c635f098771d135cae4d4864}\label{class_game_object_ae228fe78c635f098771d135cae4d4864}} 
+bool {\bfseries m\+\_\+diag\+Flip}
+\item 
+\mbox{\Hypertarget{class_game_object_a17d31f67a3bbd6f43fb05a1902aa55e7}\label{class_game_object_a17d31f67a3bbd6f43fb05a1902aa55e7}} 
+bool {\bfseries m\+\_\+vert\+Flip}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_object_ac08df1fa51d5a9646329f51411d23115}\label{class_game_object_ac08df1fa51d5a9646329f51411d23115}} 
+std\+::string \mbox{\hyperlink{class_game_object_ac08df1fa51d5a9646329f51411d23115}{m\+\_\+obj\+Name}}
+\begin{DoxyCompactList}\small\item\em Object name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a537a0522171a0bcae4e0408268a065f4}\label{class_game_object_a537a0522171a0bcae4e0408268a065f4}} 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_game_object_a537a0522171a0bcae4e0408268a065f4}{m\+\_\+position}}
+\begin{DoxyCompactList}\small\item\em Object position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_aceffd1fcde86aec20792ae4dfd1971f4}\label{class_game_object_aceffd1fcde86aec20792ae4dfd1971f4}} 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_game_object_aceffd1fcde86aec20792ae4dfd1971f4}{m\+\_\+size}}
+\begin{DoxyCompactList}\small\item\em Object size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a2a1a7787bb90821c4b2b798b6e1ccc95}\label{class_game_object_a2a1a7787bb90821c4b2b798b6e1ccc95}} 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_game_object_a2a1a7787bb90821c4b2b798b6e1ccc95}{m\+\_\+move\+Dir}}
+\begin{DoxyCompactList}\small\item\em Object movement direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a195bfc7005120bf46ad2fd426f36b089}\label{class_game_object_a195bfc7005120bf46ad2fd426f36b089}} 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{class_game_object_a195bfc7005120bf46ad2fd426f36b089}{m\+\_\+obj\+Rect}}
+\begin{DoxyCompactList}\small\item\em Object sdl rect. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_af5dd439a453e4cc024c62737ae9e0cde}\label{class_game_object_af5dd439a453e4cc024c62737ae9e0cde}} 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_game_object_af5dd439a453e4cc024c62737ae9e0cde}{m\+\_\+p\+Texture}}
+\begin{DoxyCompactList}\small\item\em Object sdl texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a8e0a971ff226fc54111b63b4d8ba570a}\label{class_game_object_a8e0a971ff226fc54111b63b4d8ba570a}} 
+\mbox{\hyperlink{class_component_pool}{Component\+Pool}} $\ast$ \mbox{\hyperlink{class_game_object_a8e0a971ff226fc54111b63b4d8ba570a}{m\+\_\+p\+Component\+Pool}}
+\begin{DoxyCompactList}\small\item\em Component pool. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a game object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_object_a0cefa9305b62d18a11d7c1182fcbf5bc}\label{class_game_object_a0cefa9305b62d18a11d7c1182fcbf5bc}} 
+\index{Game\+Object@{Game\+Object}!Game\+Object@{Game\+Object}}
+\index{Game\+Object@{Game\+Object}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Game\+Object()}{GameObject()}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&}]{original }\end{DoxyParamCaption})}
+
+
+
+Copy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em original} & The object to deep copy. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_object_a1e8c34679f8e8decbd9628a890f47c7f}\label{class_game_object_a1e8c34679f8e8decbd9628a890f47c7f}} 
+\index{Game\+Object@{Game\+Object}!Attach\+Component@{Attach\+Component}}
+\index{Attach\+Component@{Attach\+Component}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Attach\+Component()}{AttachComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Attach\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_component_pool_a7a88ce8bc60d1936539c2b9757b7e9ff}{Component\+Pool\+::\+Type}} \&}]{type }\end{DoxyParamCaption})}
+
+
+
+Attaches a component to this game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type of component to attach \\
+\hline
+{\em body\+Type} & Type of rigid body to create (for physics component only!) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a4d100b6ecc6476f52c72f0889e6c06d4}\label{class_game_object_a4d100b6ecc6476f52c72f0889e6c06d4}} 
+\index{Game\+Object@{Game\+Object}!Dettach\+Component@{Dettach\+Component}}
+\index{Dettach\+Component@{Dettach\+Component}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Dettach\+Component()}{DettachComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Dettach\+Component (\begin{DoxyParamCaption}\item[{const unsigned int}]{component\+ID }\end{DoxyParamCaption})}
+
+
+
+Detaches a component from this game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & of component to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_ae232f791564f4bf504e0ede697be7f0d}\label{class_game_object_ae232f791564f4bf504e0ede697be7f0d}} 
+\index{Game\+Object@{Game\+Object}!Set\+Component\+Pool@{Set\+Component\+Pool}}
+\index{Set\+Component\+Pool@{Set\+Component\+Pool}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Set\+Component\+Pool()}{SetComponentPool()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Set\+Component\+Pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component_pool}{Component\+Pool}} $\ast$}]{p\+New\+Pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the component pool to use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+New\+Pool} & The pool to use \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a11c2fa0ca47cbeb27d4887573a913438}\label{class_game_object_a11c2fa0ca47cbeb27d4887573a913438}} 
+\index{Game\+Object@{Game\+Object}!Set\+Move\+Dir@{Set\+Move\+Dir}}
+\index{Set\+Move\+Dir@{Set\+Move\+Dir}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Set\+Move\+Dir()}{SetMoveDir()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Set\+Move\+Dir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{new\+Dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the movement direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Dir} & Movement direction to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a400594b6957192dfe9cddaa513f49d7e}\label{class_game_object_a400594b6957192dfe9cddaa513f49d7e}} 
+\index{Game\+Object@{Game\+Object}!Set\+Obj\+Name@{Set\+Obj\+Name}}
+\index{Set\+Obj\+Name@{Set\+Obj\+Name}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Set\+Obj\+Name()}{SetObjName()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Set\+Obj\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Dir} & Name to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a898813cdba2aa0888f6e5b0e4fc6ac64}\label{class_game_object_a898813cdba2aa0888f6e5b0e4fc6ac64}} 
+\index{Game\+Object@{Game\+Object}!Set\+Obj\+Rect@{Set\+Obj\+Rect}}
+\index{Set\+Obj\+Rect@{Set\+Obj\+Rect}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Set\+Obj\+Rect()}{SetObjRect()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Set\+Obj\+Rect (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect}]{new\+Rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Rect} & S\+DL rect to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a0c213e4df823a0f68cf8906a6937f88e}\label{class_game_object_a0c213e4df823a0f68cf8906a6937f88e}} 
+\index{Game\+Object@{Game\+Object}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Set\+Position()}{SetPosition()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{new\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Pos} & Position to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a67cd10342fab71294976bf7fd5e22e01}\label{class_game_object_a67cd10342fab71294976bf7fd5e22e01}} 
+\index{Game\+Object@{Game\+Object}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Set\+Size()}{SetSize()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Set\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{new\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Size} & Size to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a931541422ec57567e1d46436d97b874c}\label{class_game_object_a931541422ec57567e1d46436d97b874c}} 
+\index{Game\+Object@{Game\+Object}!Update@{Update}}
+\index{Update@{Update}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time\+\_\+sec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time\+\_\+sec} & Time since last frame in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_updatable_a291a40a3422a0b02ef4c10e1d1570eb0}{I\+Updatable}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Logic/\+Game\+Objects/\mbox{\hyperlink{_game_object_8h}{Game\+Object.\+h}}\item 
+Source/\+Logic/\+Game\+Objects/Game\+Object.\+cpp\end{DoxyCompactItemize}

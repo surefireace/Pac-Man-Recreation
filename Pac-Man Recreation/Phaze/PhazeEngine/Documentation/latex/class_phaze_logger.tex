@@ -1,0 +1,76 @@
+\hypertarget{class_phaze_logger}{}\section{Phaze\+Logger Class Reference}
+\label{class_phaze_logger}\index{Phaze\+Logger@{Phaze\+Logger}}
+
+
+Static class used to handle logging through engine and game.  
+
+
+
+
+{\ttfamily \#include $<$Phaze\+Logger.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0}{Log\+Category}} \{ \mbox{\hyperlink{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0a176a473e63c17ccdac91640c67f149bf}{Log\+Category\+::k\+Info}}, 
+\mbox{\hyperlink{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0aec0da41f4e48b52c362303eb27ed5dee}{Log\+Category\+::k\+Warning}}, 
+\mbox{\hyperlink{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0a5a20548c220f372fc701cae6de94040b}{Log\+Category\+::k\+Critical}}, 
+{\bfseries k\+Num\+Of\+Categories}
+ \}
+\begin{DoxyCompactList}\small\item\em Log categories. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_phaze_logger_ab57f5e5578fdba0eb6bddc4fae30b681}{Phaze\+Logger}} ()=delete
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_phaze_logger_aa6a0a46e3e5a56c449e2c657697d67e7}\label{class_phaze_logger_aa6a0a46e3e5a56c449e2c657697d67e7}} 
+static void \mbox{\hyperlink{class_phaze_logger_aa6a0a46e3e5a56c449e2c657697d67e7}{Write\+To\+Log}} (const \mbox{\hyperlink{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0}{Log\+Category}} category, const std\+::string \&source\+File\+Name, const std\+::string \&dest\+File\+Name, unsigned int line\+Number, const char $\ast$p\+Msg,...)
+\begin{DoxyCompactList}\small\item\em Writes to logger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Static class used to handle logging through engine and game. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0}\label{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0}} 
+\index{Phaze\+Logger@{Phaze\+Logger}!Log\+Category@{Log\+Category}}
+\index{Log\+Category@{Log\+Category}!Phaze\+Logger@{Phaze\+Logger}}
+\subsubsection{\texorpdfstring{Log\+Category}{LogCategory}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0}{Phaze\+Logger\+::\+Log\+Category}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Log categories. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Info@{k\+Info}!Phaze\+Logger@{Phaze\+Logger}}\index{Phaze\+Logger@{Phaze\+Logger}!k\+Info@{k\+Info}}}\mbox{\Hypertarget{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0a176a473e63c17ccdac91640c67f149bf}\label{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0a176a473e63c17ccdac91640c67f149bf}} 
+k\+Info&Logged to file. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Warning@{k\+Warning}!Phaze\+Logger@{Phaze\+Logger}}\index{Phaze\+Logger@{Phaze\+Logger}!k\+Warning@{k\+Warning}}}\mbox{\Hypertarget{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0aec0da41f4e48b52c362303eb27ed5dee}\label{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0aec0da41f4e48b52c362303eb27ed5dee}} 
+k\+Warning&Logged to file, logged to console in yellow. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Critical@{k\+Critical}!Phaze\+Logger@{Phaze\+Logger}}\index{Phaze\+Logger@{Phaze\+Logger}!k\+Critical@{k\+Critical}}}\mbox{\Hypertarget{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0a5a20548c220f372fc701cae6de94040b}\label{class_phaze_logger_aa4b09b6a0ed29d067f86782aa369f6b0a5a20548c220f372fc701cae6de94040b}} 
+k\+Critical&Logged to file, logged to console in red, will crash if set. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_phaze_logger_ab57f5e5578fdba0eb6bddc4fae30b681}\label{class_phaze_logger_ab57f5e5578fdba0eb6bddc4fae30b681}} 
+\index{Phaze\+Logger@{Phaze\+Logger}!Phaze\+Logger@{Phaze\+Logger}}
+\index{Phaze\+Logger@{Phaze\+Logger}!Phaze\+Logger@{Phaze\+Logger}}
+\subsubsection{\texorpdfstring{Phaze\+Logger()}{PhazeLogger()}}
+{\footnotesize\ttfamily Phaze\+Logger\+::\+Phaze\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructor Not ment to be invoked 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Utils/\mbox{\hyperlink{_phaze_logger_8h}{Phaze\+Logger.\+h}}\item 
+Source/\+Utils/Phaze\+Logger.\+cpp\end{DoxyCompactItemize}

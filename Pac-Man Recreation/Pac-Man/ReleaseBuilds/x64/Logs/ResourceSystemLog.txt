@@ -1,0 +1,48 @@
+[Info]@resourcesystem.cpp line: 46 message: Texture: Pac-Man_map_source.png loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: power loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: dot loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: fruit loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: life loaded!
+[Info]@resourcesystem.cpp line: 102 message: Music: ghost sound loaded!
+[Info]@resourcesystem.cpp line: 102 message: Music: frightened mode sound loaded!
+[Info]@resourcesystem.cpp line: 71 message: Sound: eatSound loaded!
+[Info]@resourcesystem.cpp line: 71 message: Sound: beginning music loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: player loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: blinky loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: pinky loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: inky loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: clyde loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: afraid loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: eatten loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: Pac-Man_map_source.png loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: power loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: dot loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: fruit loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: life loaded!
+[Info]@resourcesystem.cpp line: 102 message: Music: ghost sound loaded!
+[Info]@resourcesystem.cpp line: 102 message: Music: frightened mode sound loaded!
+[Info]@resourcesystem.cpp line: 71 message: Sound: eatSound loaded!
+[Info]@resourcesystem.cpp line: 71 message: Sound: beginning music loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: player loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: blinky loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: pinky loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: inky loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: clyde loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: afraid loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: eatten loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: Pac-Man_map_source.png loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: power loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: dot loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: fruit loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: life loaded!
+[Info]@resourcesystem.cpp line: 102 message: Music: ghost sound loaded!
+[Info]@resourcesystem.cpp line: 102 message: Music: frightened mode sound loaded!
+[Info]@resourcesystem.cpp line: 71 message: Sound: eatSound loaded!
+[Info]@resourcesystem.cpp line: 71 message: Sound: beginning music loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: player loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: blinky loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: pinky loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: inky loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: clyde loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: afraid loaded!
+[Info]@resourcesystem.cpp line: 46 message: Texture: eatten loaded!

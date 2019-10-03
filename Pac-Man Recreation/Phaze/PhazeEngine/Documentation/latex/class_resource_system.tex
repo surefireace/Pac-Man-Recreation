@@ -1,0 +1,84 @@
+\hypertarget{class_resource_system}{}\section{Resource\+System Class Reference}
+\label{class_resource_system}\index{Resource\+System@{Resource\+System}}
+
+
+Overseer of all engine resources.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+System.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_resource_system_a635cbc11ec235e902cfd689371a3abec}{Resource\+System}} ()=delete
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_resource_system_ac4a4f93f639f85ed01f6482343cf22bf}{Load\+Resource}} (const std\+::string \&name, const std\+::string \&file\+Path, const \mbox{\hyperlink{class_i_resource_a693b751055bf043ebcd424a89831397f}{I\+Resource\+::\+Type}} \&type)
+\begin{DoxyCompactList}\small\item\em Loads a resource to resource map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resource_system_a0c623d474660a64ba10e2ae16697430c}\label{class_resource_system_a0c623d474660a64ba10e2ae16697430c}} 
+static void \mbox{\hyperlink{class_resource_system_a0c623d474660a64ba10e2ae16697430c}{Clean\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Cleans up the system. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_i_resource}{I\+Resource}} $\ast$ \mbox{\hyperlink{class_resource_system_a6cdcecb56a3f7131836b16d2afd10aa7}{Get\+Resource}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Returns a resource from resource map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resource_system_ae6b48360c28a728a2e619343ac410505}\label{class_resource_system_ae6b48360c28a728a2e619343ac410505}} 
+static void \mbox{\hyperlink{class_resource_system_ae6b48360c28a728a2e619343ac410505}{Set\+Renderer}} (S\+D\+L\+\_\+\+Renderer $\ast$p\+Renderer)
+\begin{DoxyCompactList}\small\item\em Sets the renderer to use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Overseer of all engine resources. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_resource_system_a635cbc11ec235e902cfd689371a3abec}\label{class_resource_system_a635cbc11ec235e902cfd689371a3abec}} 
+\index{Resource\+System@{Resource\+System}!Resource\+System@{Resource\+System}}
+\index{Resource\+System@{Resource\+System}!Resource\+System@{Resource\+System}}
+\subsubsection{\texorpdfstring{Resource\+System()}{ResourceSystem()}}
+{\footnotesize\ttfamily Resource\+System\+::\+Resource\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructor Not ment to be invoked 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_system_a6cdcecb56a3f7131836b16d2afd10aa7}\label{class_resource_system_a6cdcecb56a3f7131836b16d2afd10aa7}} 
+\index{Resource\+System@{Resource\+System}!Get\+Resource@{Get\+Resource}}
+\index{Get\+Resource@{Get\+Resource}!Resource\+System@{Resource\+System}}
+\subsubsection{\texorpdfstring{Get\+Resource()}{GetResource()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_i_resource}{I\+Resource}}$\ast$ Resource\+System\+::\+Get\+Resource (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a resource from resource map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of resource to load \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_resource_system_ac4a4f93f639f85ed01f6482343cf22bf}\label{class_resource_system_ac4a4f93f639f85ed01f6482343cf22bf}} 
+\index{Resource\+System@{Resource\+System}!Load\+Resource@{Load\+Resource}}
+\index{Load\+Resource@{Load\+Resource}!Resource\+System@{Resource\+System}}
+\subsubsection{\texorpdfstring{Load\+Resource()}{LoadResource()}}
+{\footnotesize\ttfamily void Resource\+System\+::\+Load\+Resource (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{file\+Path,  }\item[{const \mbox{\hyperlink{class_i_resource_a693b751055bf043ebcd424a89831397f}{I\+Resource\+::\+Type}} \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads a resource to resource map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name for to be loaded resource \\
+\hline
+{\em file\+Path} & resource file to load \\
+\hline
+{\em type} & Type of resource to load \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Views/\mbox{\hyperlink{_resource_system_8h}{Resource\+System.\+h}}\item 
+Source/\+Views/Resource\+System.\+cpp\end{DoxyCompactItemize}

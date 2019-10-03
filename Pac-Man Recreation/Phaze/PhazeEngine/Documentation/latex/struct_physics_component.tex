@@ -1,0 +1,51 @@
+\hypertarget{struct_physics_component}{}\section{Physics\+Component Class Reference}
+\label{struct_physics_component}\index{Physics\+Component@{Physics\+Component}}
+
+
+Component that enables physics.  
+
+
+
+
+{\ttfamily \#include $<$Physics\+Component.\+h$>$}
+
+Inheritance diagram for Physics\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_physics_component}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_physics_component_a9bf7b6448791c90e0f6f9dc3f3c01536}\label{struct_physics_component_a9bf7b6448791c90e0f6f9dc3f3c01536}} 
+void {\bfseries Create\+Body} (const \mbox{\hyperlink{class_physics_system_aa9b3a5f5c38063cdc3a78717250a239e}{Physics\+System\+::\+Rigid\+Body\+Type}} \&type, float x, float y)
+\item 
+\mbox{\Hypertarget{struct_physics_component_a201127e5510341424e8cdd1663b26d79}\label{struct_physics_component_a201127e5510341424e8cdd1663b26d79}} 
+void \mbox{\hyperlink{struct_physics_component_a201127e5510341424e8cdd1663b26d79}{Create\+Fixture}} (const \mbox{\hyperlink{class_physics_system_ac3b7ef40b19864e4ecdec88af3420a89}{Physics\+System\+::\+Polygon\+Shape\+Type}} \&type, float width, float height)
+\begin{DoxyCompactList}\small\item\em Creates a fixture for the attached body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_physics_component_acacb5877966eaecea40298e10e85cfbe}\label{struct_physics_component_acacb5877966eaecea40298e10e85cfbe}} 
+b2\+Body $\ast$ \mbox{\hyperlink{struct_physics_component_acacb5877966eaecea40298e10e85cfbe}{m\+\_\+p\+Body}}
+\begin{DoxyCompactList}\small\item\em Body of the game object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_physics_component_a1f890d5f3718a03a8d6ef4a94aa14d41}\label{struct_physics_component_a1f890d5f3718a03a8d6ef4a94aa14d41}} 
+b2\+Fixture\+Def \mbox{\hyperlink{struct_physics_component_a1f890d5f3718a03a8d6ef4a94aa14d41}{m\+\_\+fixture\+Def}}
+\begin{DoxyCompactList}\small\item\em Fixture Definition. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_physics_component_ae909b17a29234ccba3d4f55e61e7a228}\label{struct_physics_component_ae909b17a29234ccba3d4f55e61e7a228}} 
+b2\+Body\+Def \mbox{\hyperlink{struct_physics_component_ae909b17a29234ccba3d4f55e61e7a228}{m\+\_\+body\+Def}}
+\begin{DoxyCompactList}\small\item\em Body Definition. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_physics_component_a921d6cf550ac6900beb12ba6475171b8}\label{struct_physics_component_a921d6cf550ac6900beb12ba6475171b8}} 
+b2\+Polygon\+Shape $\ast$ \mbox{\hyperlink{struct_physics_component_a921d6cf550ac6900beb12ba6475171b8}{m\+\_\+p\+Body\+Polygon}}
+\begin{DoxyCompactList}\small\item\em Polygon for body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Component that enables physics. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Logic/\+Game\+Objects/\mbox{\hyperlink{_physics_component_8h}{Physics\+Component.\+h}}\item 
+Source/\+Logic/\+Game\+Objects/Physics\+Component.\+cpp\end{DoxyCompactItemize}

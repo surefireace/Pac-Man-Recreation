@@ -1,0 +1,108 @@
+\hypertarget{class_sound_system}{}\section{Sound\+System Class Reference}
+\label{class_sound_system}\index{Sound\+System@{Sound\+System}}
+
+
+Stores sfx and music.  
+
+
+
+
+{\ttfamily \#include $<$Sound\+System.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sound_system_abcef3503c51f6ccd300a821131afc366}{Sound\+System}} ()=delete
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_sound_system_a9682a8b69a9d40dcb85ba79e3c08da26}{Play\+Sfx}} (const std\+::string \&sfx\+Name)
+\begin{DoxyCompactList}\small\item\em Plays sfx. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sound_system_ac3c183dad9bb7a534d447f0189a2ce23}{Play\+Music}} (const std\+::string \&music\+Name)
+\begin{DoxyCompactList}\small\item\em Plays music. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sound_system_a43c3e75eb53c8d071b5d47a07b6d42fd}{Load\+Sfx}} (const std\+::string \&sfx\+Name, const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Loads sfx into sfx map. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sound_system_a9e305a909ac0b2773dc9c888226b183d}{Load\+Music}} (const std\+::string \&music\+Name, const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Loads music into music map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores sfx and music. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sound_system_abcef3503c51f6ccd300a821131afc366}\label{class_sound_system_abcef3503c51f6ccd300a821131afc366}} 
+\index{Sound\+System@{Sound\+System}!Sound\+System@{Sound\+System}}
+\index{Sound\+System@{Sound\+System}!Sound\+System@{Sound\+System}}
+\subsubsection{\texorpdfstring{Sound\+System()}{SoundSystem()}}
+{\footnotesize\ttfamily Sound\+System\+::\+Sound\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructor Not ment to be invoked 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sound_system_a9e305a909ac0b2773dc9c888226b183d}\label{class_sound_system_a9e305a909ac0b2773dc9c888226b183d}} 
+\index{Sound\+System@{Sound\+System}!Load\+Music@{Load\+Music}}
+\index{Load\+Music@{Load\+Music}!Sound\+System@{Sound\+System}}
+\subsubsection{\texorpdfstring{Load\+Music()}{LoadMusic()}}
+{\footnotesize\ttfamily void Sound\+System\+::\+Load\+Music (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{music\+Name,  }\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads music into music map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music\+Name} & Name for to be loaded music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sound_system_a43c3e75eb53c8d071b5d47a07b6d42fd}\label{class_sound_system_a43c3e75eb53c8d071b5d47a07b6d42fd}} 
+\index{Sound\+System@{Sound\+System}!Load\+Sfx@{Load\+Sfx}}
+\index{Load\+Sfx@{Load\+Sfx}!Sound\+System@{Sound\+System}}
+\subsubsection{\texorpdfstring{Load\+Sfx()}{LoadSfx()}}
+{\footnotesize\ttfamily void Sound\+System\+::\+Load\+Sfx (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{sfx\+Name,  }\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads sfx into sfx map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sfx\+Name} & Name for to be loaded sfx \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sound_system_ac3c183dad9bb7a534d447f0189a2ce23}\label{class_sound_system_ac3c183dad9bb7a534d447f0189a2ce23}} 
+\index{Sound\+System@{Sound\+System}!Play\+Music@{Play\+Music}}
+\index{Play\+Music@{Play\+Music}!Sound\+System@{Sound\+System}}
+\subsubsection{\texorpdfstring{Play\+Music()}{PlayMusic()}}
+{\footnotesize\ttfamily void Sound\+System\+::\+Play\+Music (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{music\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Plays music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music\+Name} & Name of music to play \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sound_system_a9682a8b69a9d40dcb85ba79e3c08da26}\label{class_sound_system_a9682a8b69a9d40dcb85ba79e3c08da26}} 
+\index{Sound\+System@{Sound\+System}!Play\+Sfx@{Play\+Sfx}}
+\index{Play\+Sfx@{Play\+Sfx}!Sound\+System@{Sound\+System}}
+\subsubsection{\texorpdfstring{Play\+Sfx()}{PlaySfx()}}
+{\footnotesize\ttfamily void Sound\+System\+::\+Play\+Sfx (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{sfx\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Plays sfx. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sfx\+Name} & Name of sfx to play \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Systems/\mbox{\hyperlink{_sound_system_8h}{Sound\+System.\+h}}\item 
+Source/\+Systems/Sound\+System.\+cpp\end{DoxyCompactItemize}

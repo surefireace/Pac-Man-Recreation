@@ -1,0 +1,95 @@
+\hypertarget{class_event_system}{}\section{Event\+System Class Reference}
+\label{class_event_system}\index{Event\+System@{Event\+System}}
+
+
+System to handle sending and recieving of Events.  
+
+
+
+
+{\ttfamily \#include $<$Event\+System.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_event_system_a461a525365e056375c1e4177897688ed}{Event\+System}} ()=delete
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_event_system_a25048a2cae1066f84ce0e0c7aecf6314}{Subscribe\+Handler}} (const Event\+::\+Type \&event\+Type, \mbox{\hyperlink{class_i_event_handler}{I\+Event\+Handler}} $\ast$p\+Handler)
+\begin{DoxyCompactList}\small\item\em Subscribes a handler to an event. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_event_system_ae8ebabb2d7e4604b3d5f666d9bcb1d32}{Unsubscribe\+Handler}} (const Event\+::\+Type \&event\+Type, \mbox{\hyperlink{class_i_event_handler}{I\+Event\+Handler}} $\ast$p\+Handler)
+\begin{DoxyCompactList}\small\item\em Unsubscribes a handler from an event. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_event_system_ae7f287c5ee2c8001e19467ae8fda8a67}{Broadcast\+Event}} (\mbox{\hyperlink{struct_event}{Event}} $\ast$p\+Event)
+\begin{DoxyCompactList}\small\item\em Broadcasts an event to all its handlers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+System to handle sending and recieving of Events. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_event_system_a461a525365e056375c1e4177897688ed}\label{class_event_system_a461a525365e056375c1e4177897688ed}} 
+\index{Event\+System@{Event\+System}!Event\+System@{Event\+System}}
+\index{Event\+System@{Event\+System}!Event\+System@{Event\+System}}
+\subsubsection{\texorpdfstring{Event\+System()}{EventSystem()}}
+{\footnotesize\ttfamily Event\+System\+::\+Event\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructor Not ment to be invoked 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_event_system_ae7f287c5ee2c8001e19467ae8fda8a67}\label{class_event_system_ae7f287c5ee2c8001e19467ae8fda8a67}} 
+\index{Event\+System@{Event\+System}!Broadcast\+Event@{Broadcast\+Event}}
+\index{Broadcast\+Event@{Broadcast\+Event}!Event\+System@{Event\+System}}
+\subsubsection{\texorpdfstring{Broadcast\+Event()}{BroadcastEvent()}}
+{\footnotesize\ttfamily void Event\+System\+::\+Broadcast\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_event}{Event}} $\ast$}]{p\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Broadcasts an event to all its handlers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Event} & pointer to \mbox{\hyperlink{struct_event}{Event}} to broadcast \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_event_system_a25048a2cae1066f84ce0e0c7aecf6314}\label{class_event_system_a25048a2cae1066f84ce0e0c7aecf6314}} 
+\index{Event\+System@{Event\+System}!Subscribe\+Handler@{Subscribe\+Handler}}
+\index{Subscribe\+Handler@{Subscribe\+Handler}!Event\+System@{Event\+System}}
+\subsubsection{\texorpdfstring{Subscribe\+Handler()}{SubscribeHandler()}}
+{\footnotesize\ttfamily void Event\+System\+::\+Subscribe\+Handler (\begin{DoxyParamCaption}\item[{const Event\+::\+Type \&}]{event\+Type,  }\item[{\mbox{\hyperlink{class_i_event_handler}{I\+Event\+Handler}} $\ast$}]{p\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Subscribes a handler to an event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & The type of event to subscribe the handler to \\
+\hline
+{\em p\+Handler} & pointer to the handler that will be subscribed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_event_system_ae8ebabb2d7e4604b3d5f666d9bcb1d32}\label{class_event_system_ae8ebabb2d7e4604b3d5f666d9bcb1d32}} 
+\index{Event\+System@{Event\+System}!Unsubscribe\+Handler@{Unsubscribe\+Handler}}
+\index{Unsubscribe\+Handler@{Unsubscribe\+Handler}!Event\+System@{Event\+System}}
+\subsubsection{\texorpdfstring{Unsubscribe\+Handler()}{UnsubscribeHandler()}}
+{\footnotesize\ttfamily void Event\+System\+::\+Unsubscribe\+Handler (\begin{DoxyParamCaption}\item[{const Event\+::\+Type \&}]{event\+Type,  }\item[{\mbox{\hyperlink{class_i_event_handler}{I\+Event\+Handler}} $\ast$}]{p\+Handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Unsubscribes a handler from an event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & The type of event to unsubscribe the handler from \\
+\hline
+{\em p\+Handler} & pointer to the handler that will be unsubscribed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Logic/\+Events/\mbox{\hyperlink{_event_system_8h}{Event\+System.\+h}}\item 
+Source/\+Logic/\+Events/Event\+System.\+cpp\end{DoxyCompactItemize}

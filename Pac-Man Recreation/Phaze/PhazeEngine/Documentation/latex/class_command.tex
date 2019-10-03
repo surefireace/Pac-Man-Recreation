@@ -1,0 +1,78 @@
+\hypertarget{class_command}{}\section{Command Class Reference}
+\label{class_command}\index{Command@{Command}}
+
+
+Interpreted input data and base class for Commands.  
+
+
+
+
+{\ttfamily \#include $<$Command.\+h$>$}
+
+Inheritance diagram for Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_command}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_command_a45bbda49e9ee96d262ac651fefffe487}\label{class_command_a45bbda49e9ee96d262ac651fefffe487}} 
+enum \mbox{\hyperlink{class_command_a45bbda49e9ee96d262ac651fefffe487}{Action}} \{ \newline
+{\bfseries k\+Invalid}, 
+{\bfseries k\+Move\+Up}, 
+{\bfseries k\+Move\+Down}, 
+{\bfseries k\+Move\+Right}, 
+\newline
+{\bfseries k\+Move\+Left}, 
+{\bfseries k\+Select}, 
+{\bfseries k\+Back}, 
+{\bfseries k\+Num\+Of\+Actions}
+ \}
+\begin{DoxyCompactList}\small\item\em Different kinds of actions commands can represent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_command_a4ca33b8d40e12deca5e7bb4190426ee1}\label{class_command_a4ca33b8d40e12deca5e7bb4190426ee1}} 
+enum \mbox{\hyperlink{class_command_a4ca33b8d40e12deca5e7bb4190426ee1}{Type}} \{ {\bfseries k\+Invalid}, 
+{\bfseries k\+Key}, 
+{\bfseries k\+Num\+Of\+Types}
+ \}
+\begin{DoxyCompactList}\small\item\em Different types of commands can represent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_command_aa511383ade72a941cb61c8498bdf1807}{Command}} (\mbox{\hyperlink{class_command_a45bbda49e9ee96d262ac651fefffe487}{Action}} action=Action\+::k\+Invalid, \mbox{\hyperlink{class_command_a4ca33b8d40e12deca5e7bb4190426ee1}{Type}} type=Type\+::k\+Invalid)
+\item 
+\mbox{\Hypertarget{class_command_a09802e64142f3c825555b6e77252974e}\label{class_command_a09802e64142f3c825555b6e77252974e}} 
+\mbox{\hyperlink{class_command_a45bbda49e9ee96d262ac651fefffe487}{Action}} \mbox{\hyperlink{class_command_a09802e64142f3c825555b6e77252974e}{Get\+Action}} ()
+\begin{DoxyCompactList}\small\item\em Returns the action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_command_aa4b7374825c05006b00ca76c9ed5a021}\label{class_command_aa4b7374825c05006b00ca76c9ed5a021}} 
+\mbox{\hyperlink{class_command_a4ca33b8d40e12deca5e7bb4190426ee1}{Type}} \mbox{\hyperlink{class_command_aa4b7374825c05006b00ca76c9ed5a021}{m\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em The type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interpreted input data and base class for Commands. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_command_aa511383ade72a941cb61c8498bdf1807}\label{class_command_aa511383ade72a941cb61c8498bdf1807}} 
+\index{Command@{Command}!Command@{Command}}
+\index{Command@{Command}!Command@{Command}}
+\subsubsection{\texorpdfstring{Command()}{Command()}}
+{\footnotesize\ttfamily Command\+::\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_command_a45bbda49e9ee96d262ac651fefffe487}{Action}}}]{action = {\ttfamily Action\+:\+:kInvalid},  }\item[{\mbox{\hyperlink{class_command_a4ca33b8d40e12deca5e7bb4190426ee1}{Type}}}]{type = {\ttfamily Type\+:\+:kInvalid} }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em action} & The command action \\
+\hline
+{\em type} & The command type \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Logic/\+Input/\mbox{\hyperlink{_command_8h}{Command.\+h}}\item 
+Source/\+Logic/\+Input/Command.\+cpp\end{DoxyCompactItemize}

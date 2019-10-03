@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{1ad9ad98-3ffb-46bc-bcf7-7459751f885d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Generated">
+      <UniqueIdentifier>{72ec97ca-c863-4512-b5a3-498c800d1bea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Scripting">
+      <UniqueIdentifier>{4d2371d4-2af8-4993-a1c2-77f4cfc3780b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utils">
+      <UniqueIdentifier>{eb99a8a0-dc76-489c-aed2-f1bef8c4d0af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application">
+      <UniqueIdentifier>{46ebd33d-df38-4649-9310-456ad0048efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Logic">
+      <UniqueIdentifier>{e5f5f18f-3c6b-42f9-ae58-5392aad94447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Views">
+      <UniqueIdentifier>{ed53b7ff-249e-48ac-a260-4b8a1a2542c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Logic\Math">
+      <UniqueIdentifier>{e240390e-acee-4d8c-a659-cdb82c68693f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Logic\Events">
+      <UniqueIdentifier>{3b0999c1-b77d-474b-a651-c25b69b1db06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Logic\Input">
+      <UniqueIdentifier>{bad76778-2998-46a0-9bc2-5314b4823b40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Logic\GameObjects">
+      <UniqueIdentifier>{09adc7b3-98da-43b7-b283-0fdc81496a98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Logic\Physics">
+      <UniqueIdentifier>{85239415-7d6e-4bae-95ee-b3a9ab6c0f04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Logic\Scripting">
+      <UniqueIdentifier>{7ca0a266-fda9-47b9-9ad0-b705c62b2986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Logic\UI">
+      <UniqueIdentifier>{7f664b68-c9d7-46b9-b5e2-16fac70ae884}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Generated\Application.gen.cpp">
+      <Filter>Source\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\tinyxml2.cpp">
+      <Filter>Source\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scripting\RegisterLuaFunctions.cpp">
+      <Filter>Source\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Application.cpp">
+      <Filter>Source\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Game.cpp">
+      <Filter>Source\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\View.cpp">
+      <Filter>Source\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\PhazeLogger.cpp">
+      <Filter>Source\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\MapSystem.cpp">
+      <Filter>Source\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\ResourceSystem.cpp">
+      <Filter>Source\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Events\EventSystem.cpp">
+      <Filter>Source\Logic\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\GameObjects\ComponentPool.cpp">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\GameObjects\GameObject.cpp">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\GameObjects\MovementComponent.cpp">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\GameObjects\ObjectPool.cpp">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\GameObjects\PhysicsComponent.cpp">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Input\InputSystem.cpp">
+      <Filter>Source\Logic\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Math\Vector2D.cpp">
+      <Filter>Source\Logic\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Physics\PhysicsSystem.cpp">
+      <Filter>Source\Logic\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\Scripting\ScriptSystem.cpp">
+      <Filter>Source\Logic\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logic\UI\UISystem.cpp">
+      <Filter>Source\Logic\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Generated\Application.gen.h">
+      <Filter>Source\Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\tinyxml2.h">
+      <Filter>Source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scripting\RegisterLuaFunctions.h">
+      <Filter>Source\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Application.h">
+      <Filter>Source\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Game.h">
+      <Filter>Source\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\View.h">
+      <Filter>Source\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\Macros.h">
+      <Filter>Source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\PhazeLogger.h">
+      <Filter>Source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\IRenderable.h">
+      <Filter>Source\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\IUpdatable.h">
+      <Filter>Source\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\MapSystem.h">
+      <Filter>Source\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\ResourceSystem.h">
+      <Filter>Source\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Events\EventSystem.h">
+      <Filter>Source\Logic\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\GameObjects\ComponentPool.h">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\GameObjects\GameObject.h">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\GameObjects\IComponent.h">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\GameObjects\MovementComponent.h">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\GameObjects\ObjectPool.h">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\GameObjects\PhysicsComponent.h">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\GameObjects\TextureComponent.h">
+      <Filter>Source\Logic\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Input\InputSystem.h">
+      <Filter>Source\Logic\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Math\Vector2D.h">
+      <Filter>Source\Logic\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Physics\PhysicsSystem.h">
+      <Filter>Source\Logic\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\Scripting\ScriptSystem.h">
+      <Filter>Source\Logic\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logic\UI\UISystem.h">
+      <Filter>Source\Logic\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,97 @@
+\hypertarget{class_game}{}\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+Represents game logic.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_game_a083fc4d208482811d5dd6efb5c7fbaf4}{Init}} (\mbox{\hyperlink{class_object_pool}{Object\+Pool}} $\ast$p\+Obj\+Pool, \mbox{\hyperlink{class_component_pool}{Component\+Pool}} $\ast$p\+Component\+Pool, lua\+\_\+\+State $\ast$p\+Lua\+State)
+\begin{DoxyCompactList}\small\item\em Initializes the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_afe8f2a4980f240bbfba8c1f495ff5075}\label{class_game_afe8f2a4980f240bbfba8c1f495ff5075}} 
+void \mbox{\hyperlink{class_game_afe8f2a4980f240bbfba8c1f495ff5075}{Clean\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Cleans up game from memory. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} void \mbox{\hyperlink{class_game_a49cc5bc8eee98577d72cd49dfc3c4af5}{Update}} (const float delta\+Time\+\_\+sec) override
+\begin{DoxyCompactList}\small\item\em Updates the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a622f72b9b81370d4d77f7b625a36fd75}\label{class_game_a622f72b9b81370d4d77f7b625a36fd75}} 
+void \mbox{\hyperlink{class_game_a622f72b9b81370d4d77f7b625a36fd75}{Handle\+Key\+Command}} (\mbox{\hyperlink{class_key_command}{Key\+Command}} \&key\+Command)
+\begin{DoxyCompactList}\small\item\em Handles a key command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a379673c1cde729d801e6f14f7b394810}\label{class_game_a379673c1cde729d801e6f14f7b394810}} 
+virtual \mbox{\hyperlink{_macros_8h_a9ce0e6835f82908079752fa4ebe70dc9}{P\+H\+A\+Z\+E\+\_\+\+A\+PI}} void \mbox{\hyperlink{class_game_a379673c1cde729d801e6f14f7b394810}{Handle\+Event}} (\mbox{\hyperlink{struct_event}{Event}} $\ast$p\+Event) override
+\begin{DoxyCompactList}\small\item\em Hanldes an event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a00a6ce87351c9bc799834b0061396bbd}\label{class_game_a00a6ce87351c9bc799834b0061396bbd}} 
+bool \mbox{\hyperlink{class_game_a00a6ce87351c9bc799834b0061396bbd}{Get\+Playing\+Flag}} ()
+\begin{DoxyCompactList}\small\item\em Returns playing flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a69ee850fc9c3af5373a60ea26c2e6700}\label{class_game_a69ee850fc9c3af5373a60ea26c2e6700}} 
+void \mbox{\hyperlink{class_game_a69ee850fc9c3af5373a60ea26c2e6700}{Quit\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Sets playing flag to false. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_game_af132c9a360c2adafd158c3a331b39c4d}{Get\+Game\+Objects}} ()
+\begin{DoxyCompactList}\small\item\em Returns test game object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents game logic. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_af132c9a360c2adafd158c3a331b39c4d}\label{class_game_af132c9a360c2adafd158c3a331b39c4d}} 
+\index{Game@{Game}!Get\+Game\+Objects@{Get\+Game\+Objects}}
+\index{Get\+Game\+Objects@{Get\+Game\+Objects}!Game@{Game}}
+\subsubsection{\texorpdfstring{Get\+Game\+Objects()}{GetGameObjects()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_game_object}{Game\+Object}}$\ast$$>$$\ast$ Game\+::\+Get\+Game\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns test game object. 
+
+Returns a pointer to the list of Game\+Objects \mbox{\Hypertarget{class_game_a083fc4d208482811d5dd6efb5c7fbaf4}\label{class_game_a083fc4d208482811d5dd6efb5c7fbaf4}} 
+\index{Game@{Game}!Init@{Init}}
+\index{Init@{Init}!Game@{Game}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool Game\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_pool}{Object\+Pool}} $\ast$}]{p\+Obj\+Pool,  }\item[{\mbox{\hyperlink{class_component_pool}{Component\+Pool}} $\ast$}]{p\+Component\+Pool,  }\item[{lua\+\_\+\+State $\ast$}]{p\+Lua\+State }\end{DoxyParamCaption})}
+
+
+
+Initializes the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+View} & \mbox{\hyperlink{class_view}{View}} delegate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a49cc5bc8eee98577d72cd49dfc3c4af5}\label{class_game_a49cc5bc8eee98577d72cd49dfc3c4af5}} 
+\index{Game@{Game}!Update@{Update}}
+\index{Update@{Update}!Game@{Game}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+::\+Update (\begin{DoxyParamCaption}\item[{const float}]{delta\+Time\+\_\+sec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time\+\_\+sec} & Time since last frame in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_updatable_a291a40a3422a0b02ef4c10e1d1570eb0}{I\+Updatable}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Logic/\mbox{\hyperlink{_game_8h}{Game.\+h}}\item 
+Source/\+Logic/Game.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{class_component_pool}{}\section{Component\+Pool Class Reference}
+\label{class_component_pool}\index{Component\+Pool@{Component\+Pool}}
+
+
+Pool of I\+Components.  
+
+
+
+
+{\ttfamily \#include $<$Component\+Pool.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_pool_a7a88ce8bc60d1936539c2b9757b7e9ff}\label{class_component_pool_a7a88ce8bc60d1936539c2b9757b7e9ff}} 
+enum \mbox{\hyperlink{class_component_pool_a7a88ce8bc60d1936539c2b9757b7e9ff}{Type}} \{ {\bfseries k\+Move}, 
+{\bfseries k\+Texture}, 
+{\bfseries k\+Physics}, 
+{\bfseries k\+Num\+Of\+Compnent\+Types}
+ \}
+\begin{DoxyCompactList}\small\item\em Component types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_component}{I\+Component}} $\ast$ \mbox{\hyperlink{class_component_pool_a08fcae7465ae05cae03872bcaa30203d}{Create\+Component}} (const \mbox{\hyperlink{class_component_pool_a7a88ce8bc60d1936539c2b9757b7e9ff}{Type}} \&type)
+\begin{DoxyCompactList}\small\item\em Creates an \mbox{\hyperlink{class_i_component}{I\+Component}} and returns a pointer to it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_component_pool_a5ffc15d4dabb968b528c349aea7b0357}{Delete\+Component}} (unsigned int component\+ID)
+\begin{DoxyCompactList}\small\item\em Deletes an \mbox{\hyperlink{class_i_component}{I\+Component}} from the pool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_pool_a2744a9ff52ecf322e5a76c4722d7f626}\label{class_component_pool_a2744a9ff52ecf322e5a76c4722d7f626}} 
+bool \mbox{\hyperlink{class_component_pool_a2744a9ff52ecf322e5a76c4722d7f626}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the pool. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Pool of I\+Components. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_component_pool_a08fcae7465ae05cae03872bcaa30203d}\label{class_component_pool_a08fcae7465ae05cae03872bcaa30203d}} 
+\index{Component\+Pool@{Component\+Pool}!Create\+Component@{Create\+Component}}
+\index{Create\+Component@{Create\+Component}!Component\+Pool@{Component\+Pool}}
+\subsubsection{\texorpdfstring{Create\+Component()}{CreateComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_component}{I\+Component}} $\ast$ Component\+Pool\+::\+Create\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_component_pool_a7a88ce8bc60d1936539c2b9757b7e9ff}{Type}} \&}]{type }\end{DoxyParamCaption})}
+
+
+
+Creates an \mbox{\hyperlink{class_i_component}{I\+Component}} and returns a pointer to it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type of component to be created. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_component_pool_a5ffc15d4dabb968b528c349aea7b0357}\label{class_component_pool_a5ffc15d4dabb968b528c349aea7b0357}} 
+\index{Component\+Pool@{Component\+Pool}!Delete\+Component@{Delete\+Component}}
+\index{Delete\+Component@{Delete\+Component}!Component\+Pool@{Component\+Pool}}
+\subsubsection{\texorpdfstring{Delete\+Component()}{DeleteComponent()}}
+{\footnotesize\ttfamily void Component\+Pool\+::\+Delete\+Component (\begin{DoxyParamCaption}\item[{unsigned int}]{component\+ID }\end{DoxyParamCaption})}
+
+
+
+Deletes an \mbox{\hyperlink{class_i_component}{I\+Component}} from the pool. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component\+ID} & ID of the component to delete. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Logic/\+Game\+Objects/\mbox{\hyperlink{_component_pool_8h}{Component\+Pool.\+h}}\item 
+Source/\+Logic/\+Game\+Objects/Component\+Pool.\+cpp\end{DoxyCompactItemize}
