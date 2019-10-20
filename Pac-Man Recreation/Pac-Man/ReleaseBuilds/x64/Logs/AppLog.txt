@@ -1,9 +1,0 @@
-[Info]@application.cpp line: 37 message: Lua State and libs loaded!
-[Info]@application.cpp line: 110 message: SDL Initialization complete!
-[Info]@application.cpp line: 168 message: Application Created!
-[Info]@application.cpp line: 37 message: Lua State and libs loaded!
-[Info]@application.cpp line: 110 message: SDL Initialization complete!
-[Info]@application.cpp line: 168 message: Application Created!
-[Info]@application.cpp line: 37 message: Lua State and libs loaded!
-[Info]@application.cpp line: 110 message: SDL Initialization complete!
-[Info]@application.cpp line: 168 message: Application Created!

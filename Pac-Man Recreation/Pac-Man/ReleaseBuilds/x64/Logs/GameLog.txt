@@ -1,3 +1,0 @@
-[Info]@game.cpp line: 68 message: Game Logic Created!
-[Info]@game.cpp line: 68 message: Game Logic Created!
-[Info]@game.cpp line: 68 message: Game Logic Created!
